@@ -247,7 +247,8 @@ PRODUCT_COPY_FILES += \
 # Init
 PRODUCT_PACKAGES += \
     charger_fw_fstab.qti \
-    fstab.qcom
+    fstab.qcom \
+    fstab.zram
 
 PRODUCT_PACKAGES += \
     init.class_main.sh \
@@ -274,7 +275,8 @@ PRODUCT_PACKAGES += \
     ueventd.qcom.rc
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.qcom
+    $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.qcom \
+    $(LOCAL_PATH)/rootdir/etc/fstab.zram:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.zram
 
 $(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):init_xiaomi_peridot)
 
