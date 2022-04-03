@@ -8,6 +8,9 @@ DEVICE_PATH := device/xiaomi/peridot
 
 BUILD_BROKEN_DUP_RULES := true
 
+# Inherit from proprietary files for miuicamera
+-include device/xiaomi/peridot-miuicamera/BoardConfig.mk
+
 # A/B
 AB_OTA_UPDATER := true
 AB_OTA_PARTITIONS := \
@@ -95,9 +98,6 @@ DEVICE_MANIFEST_FILE := \
     hardware/qcom-caf/sm8650/audio/primary-hal/configs/common/manifest_non_qmaa_extn.xml
 
 ODM_MANIFEST_FILES := $(DEVICE_PATH)/configs/hidl/manifest_odm.xml
-
-# Inherit from proprietary files for miuicamera
--include device/xiaomi/peridot-miuicamera/BoardConfig.mk
 
 # Kernel
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
