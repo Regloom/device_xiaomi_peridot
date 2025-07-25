@@ -122,6 +122,7 @@ TARGET_KERNEL_CONFIG := \
     vendor/peridot_GKI.config
 
 BOARD_KERNEL_CMDLINE := \
+    sysctl.kernel.firmware_config.force_sysfs_fallback=1 \
     swinfo.fingerprint=peridot:$(LINEAGE_VERSION) \
     mtdoops.fingerprint=peridot:$(LINEAGE_VERSION)
 
