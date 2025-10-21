@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2024 The LineageOS Project
+     SPDX-FileCopyrightText: The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Doze: does this device support STATE_DOZE?  -->
     <bool name="doze_display_state_supported">true</bool>
+
+    <!-- Should we vibrate on an icon animation of the shelf. This should only be active if the
+     vibrator is capable of subtle vibrations -->
+    <bool name="config_vibrateOnIconAnimation">true</bool>
 
     <!-- Type of a sensor that provides a low-power estimate of the desired display
          brightness, suitable to listen to while the device is asleep (e.g. during
@@ -36,27 +40,15 @@
         <item>0</item>
     </integer-array>
 
-    <!-- Bottom margin size when fingerprint in display is active -->
-    <dimen name="keyguard_indication_margin_bottom">8dp</dimen>
-
     <!-- Preferred refresh rate at keyguard, if supported by the display. Overrides
-          keyguardMaxRefreshRate. -->
+         keyguardMaxRefreshRate. -->
     <integer name="config_keyguardRefreshRate">120</integer>
 
-    <!-- Location on the screen of the center of the physical power button. -->
-    <dimen name="physical_power_button_center_screen_location_y">1210px</dimen>
-
-    <!-- Pixel pitch of the device. um/px -->
-    <item name="pixel_pitch" format="float" type="dimen">54.5</item>
-
-    <!-- Doze: does the single tap sensor need a proximity check? -->
-    <bool name="doze_single_tap_proximity_check">false</bool>
+    <!-- Doze: does the double tap sensor need a proximity check? -->
+    <bool name="doze_double_tap_proximity_check">true</bool>
 
     <!-- Doze: does the double tap sensor need a proximity check? -->
-     <bool name="doze_double_tap_proximity_check">false</bool>
-
-    <!-- Doze: does the pickup sensor need a proximity check? -->
-    <bool name="doze_pickup_event_proximity_check">false</bool>
+    <bool name="doze_single_tap_proximity_check">true</bool>
 
     <!-- Whether usage of the proximity sensor during doze is supported -->
     <bool name="doze_proximity_sensor_supported">false</bool>
@@ -81,9 +73,6 @@
 
     <!-- Whether to disable Smart Pixels on UDFPS -->
     <bool name="config_disableSmartPixelsOnUDFPS">true</bool>
-
-    <!-- If not zero, limits the internal screen recorder's framerate to the set value. -->
-    <integer name="config_screenRecorderMaxFramerate">120</integer>
 
     <!-- Override value to use for proximity sensor.  -->
     <string name="proximity_sensor_type" translatable="false">android.sensor.light</string>

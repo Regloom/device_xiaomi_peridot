@@ -13,14 +13,10 @@ dontaudit surfaceflinger vendor_file:file read;
 # BootAnimation
 dontaudit bootanim vendor_file:file read;
 
-dontaudit {
-  hal_audio_default
-  hal_graphics_composer_default
-  hal_sensors_default
-  rild
-  vendor_adpl
-  vendor_cnd
-  vendor_dpmd
-  vendor_hal_imsrtp
-  vendor_sensors_qti
-} vendor_diag_device:chr_file rw_file_perms;
+# qti services reading default_prop noise
+dontaudit vendor_qtidataservices_app default_prop:file { read open getattr };
+dontaudit vendor_timeservice_app default_prop:file { read open getattr };
+
+dontaudit system_server proc_kallsyms:file getattr;
+dontaudit hal_camera_default shell_data_file:dir { read getattr search };
+dontaudit hal_camera_default system_data_file:dir { read getattr search };

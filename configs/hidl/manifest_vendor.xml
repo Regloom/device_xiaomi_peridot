@@ -18,6 +18,12 @@
         <name>android.hardware.gatekeeper</name>
         <fqname>IGatekeeper/default</fqname>
     </hal>
+    <hal format="aidl">
+        <name>android.hardware.secure_element</name>
+        <fqname>ISecureElement/SIM3</fqname>
+        <fqname>ISecureElement/eSE1</fqname>
+        <fqname>ISecureElement/eSE2</fqname>
+    </hal>
     <hal format="hidl">
         <name>com.qualcomm.qti.dpm.api</name>
         <transport>hwbinder</transport>
@@ -93,5 +99,10 @@
         <name>vendor.qti.ims.factory</name>
         <transport>hwbinder</transport>
         <fqname>@1.1::IImsFactory/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.xiaomi.hardware.fx.tunnel</name>
+        <version>1</version>
+        <fqname>IMiFxTunnel/default</fqname>
     </hal>
 </manifest>

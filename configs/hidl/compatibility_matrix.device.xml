@@ -1,12 +1,9 @@
 <compatibility-matrix version="7.0" type="framework">
     <hal format="aidl" optional="true">
-        <name>com.fingerprints.extension3</name>
+        <name>android.hardware.authsecret</name>
+        <version>1</version>
         <interface>
-            <name>IFingerprintNavigation</name>
-            <instance>default</instance>
-        </interface>
-        <interface>
-            <name>IFingerprintSensorTest</name>
+            <name>IAuthSecret</name>
             <instance>default</instance>
         </interface>
     </hal>
@@ -48,20 +45,6 @@
         </interface>
     </hal>
     <hal format="aidl" optional="true">
-        <name>vendor.xiaomi.hardware.fingerprintextension</name>
-        <interface>
-            <name>IXiaomiFingerprint</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="aidl" optional="true">
-        <name>vendor.xiaomi.hardware.fx.tunnel</name>
-        <interface>
-            <name>IMiFxTunnel</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="aidl" optional="true">
         <name>vendor.xiaomi.hardware.mlipay</name>
         <interface>
             <name>IMlipayService</name>
@@ -76,25 +59,9 @@
         </interface>
     </hal>
     <hal format="aidl" optional="true">
-        <name>android.hardware.power</name>
-        <version>5</version>
+        <name>vendor.xiaomi.hardware.fx.tunnel</name>
         <interface>
-            <name>IPower</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="aidl" optional="true">
-        <name>vendor.xiaomi.sensor.camera</name>
-        <version>1</version>
-        <interface>
-            <name>IMiCam</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="aidl" optional="true">
-        <name>vendor.xiaomi.hw.touchfeature</name>
-        <interface>
-            <name>ITouchFeature</name>
+            <name>IMiFxTunnel</name>
             <instance>default</instance>
         </interface>
     </hal>
@@ -105,68 +72,38 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="true">
-        <name>android.hardware.authsecret</name>
-        <version>1.0</version>
+    <hal format="aidl" optional="true">
+        <name>vendor.xiaomi.hardware.display.mihwcextension</name>
         <interface>
-            <name>IAuthSecret</name>
+            <name>IMiHwcExtension</name>
             <instance>default</instance>
         </interface>
     </hal>
     <hal format="aidl" optional="true">
-        <name>android.hardware.biometrics.fingerprint</name>
-        <version>4</version>
+        <name>android.hardware.power</name>
+        <version>5</version>
         <interface>
-            <name>IFingerprint</name>
+            <name>IPower</name>
             <instance>default</instance>
         </interface>
     </hal>
     <hal format="aidl" optional="true">
-        <name>android.hardware.bluetooth.audio</name>
-        <version>4</version>
+        <name>vendor.lineage.touch</name>
+        <version>1</version>
         <interface>
-            <name>IBluetoothAudioProviderFactory</name>
+            <name>IHighTouchPollingRate</name>
             <instance>default</instance>
         </interface>
     </hal>
     <hal format="aidl" optional="true">
-        <name>android.hardware.wifi</name>
-        <version>2</version>
+        <name>vendor.lineage.health</name>
+        <version>1-2</version>
         <interface>
-            <name>IWifi</name>
+            <name>IChargingControl</name>
             <instance>default</instance>
         </interface>
-    </hal>
-    <hal format="aidl" optional="true">
-        <name>android.hardware.health</name>
-        <version>3</version>
         <interface>
-            <name>IHealth</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="aidl" optional="true">
-        <name>android.hardware.wifi.hostapd</name>
-        <version>2</version>
-        <interface>
-            <name>IHostapd</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="aidl" optional="true">
-        <name>android.hardware.wifi.supplicant</name>
-        <version>3</version>
-        <interface>
-            <name>ISupplicant</name>
-            <instance>default</instance>
-            <instance>wigigp2p</instance>
-        </interface>
-    </hal>
-    <hal format="aidl" optional="true">
-        <name>vendor.xiaomi.hardware.micharge</name>
-        <version>2</version>
-        <interface>
-            <name>IMiCharge</name>
+            <name>IFastCharge</name>
             <instance>default</instance>
         </interface>
     </hal>

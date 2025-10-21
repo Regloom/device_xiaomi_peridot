@@ -1,11 +1,10 @@
 //
-// Copyright (C) 2024 The LineageOS Project
-//
+// SPDX-FileCopyrightText: The LineageOS Project
 // SPDX-License-Identifier: Apache-2.0
 //
 
 runtime_resource_overlay {
     name: "CarrierConfigOverlayPeridot",
-    vendor: true,
+    product_specific: true,
     aaptflags: ["--keep-raw-values"],
 }

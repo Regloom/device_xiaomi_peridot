@@ -6,7 +6,6 @@
 soong_namespace {
     imports: [
         "hardware/xiaomi",
-        "hardware/qcom-caf/bootctrl",
         "hardware/lineage/interfaces/power-libperfmgr",
         "hardware/qcom-caf/common/libqti-perfd-client",
         "hardware/google/interfaces",
@@ -33,13 +32,6 @@ install_symlink {
     vendor: true,
     installed_location: "firmware/wlan/qca_cld/qca6750/WCNSS_qcom_cfg.ini",
     symlink_target: "/vendor/etc/wifi/qca6750/WCNSS_qcom_cfg.ini",
-}
-
-install_symlink {
-    name: "rfs_msm_mpss_readonly_mbnconfig_symlink",
-    vendor: true,
-    installed_location: "rfs/msm/mpss/readonly/mbnconfig",
-    symlink_target: "/data/vendor/mbnconfig",
 }
 
 mkdir {

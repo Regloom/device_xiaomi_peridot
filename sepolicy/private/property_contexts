@@ -27,15 +27,12 @@ ro.ril.operator                     u:object_r:exported_system_prop:s0
 ro.ril.nal                          u:object_r:exported_system_prop:s0
 ro.ril.factory_id                   u:object_r:exported_system_prop:s0
 
-# SettingsLib
-settingsdebug.instant.packages      u:object_r:settingslib_prop:s0
-
 # Sensors
 persist.sensor.sardisable           u:object_r:vendor_sensors_prop:s0
+
+# Thermal
+ro.oplus.image.my_engineering.type  u:object_r:exported_system_prop:s0
 
 # Fling
 ro.max.fling_velocity               u:object_r:exported_system_prop:s0
 ro.min.fling_velocity               u:object_r:exported_system_prop:s0
-
-# XiaomiParts
-persist.sys.turbo_charge_current    u:object_r:exported_system_prop:s0

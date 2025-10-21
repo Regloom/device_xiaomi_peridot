@@ -4,160 +4,44 @@ aaudio.hw_burst_min_usec=2000
 aaudio.mmap_exclusive_policy=2
 aaudio.mmap_policy=2
 audio.deep_buffer.media=true
-audio.offload.track.enable=true
 audio.offload.video=true
-audio.sys.noisy.broadcast.delay=600
-audio.sys.offload.pstimeout.secs=3
 debug.c2.use_dmabufheaps=1
-persist.audio.button_jack.profile=volume
-persist.audio.button_jack.switch=0
-persist.audio.fluence.speaker=true
-persist.audio.fluence.voicecall=true
-persist.audio.fluence.voicecomm=true
-persist.audio.fluence.voicerec=false
-persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac-aptxadaptive-lhdc
-persist.bluetooth.a2dp_offload.disabled=false
-persist.vendor.audio.ambisonic.auto.profile=false
-persist.vendor.audio.ambisonic.capture=false
-persist.vendor.audio.apptype.multirec.enabled=false
 persist.vendor.audio.auto.scenario=true
-persist.vendor.audio.avs.afe_api_version=2
-persist.vendor.audio.dolby.disable=true
-persist.vendor.audio.fluence.speaker=true
-persist.vendor.audio.fluence.tmic.enabled=false
-persist.vendor.audio.fluence.voicecall=true
-persist.vendor.audio.fluence.voicerec=false
-persist.vendor.audio.ha_proxy.enabled=true
 persist.vendor.audio.induce_crash=false
-persist.vendor.audio.misoundasc=false
 persist.vendor.audio.misound.disable=true
-persist.vendor.audio.ras.enabled=false
-persist.vendor.audio.spv3.enable=true
-persist.vendor.audio.voicecall.speaker.stereo=true
-ro.af.client_heap_size_kbyte=7168
+persist.vendor.audio.misoundasc=false
 ro.audio.flinger_standbytime_ms=2000
 ro.audio.monitorRotation=true
 ro.audio.spatializer_enabled=true
-ro.bluetooth.a2dp_offload.supported=true
-ro.config.alarm_vol_steps=15
-ro.config.system_vol_steps=15
-ro.config.vc_call_vol_steps=11
-ro.qc.sdk.audio.fluencetype=none
-ro.vendor.audio.aiasst.support=true
 ro.vendor.audio.btsamplerate.adaptive=true
 ro.vendor.audio.dualadc.support=true
-ro.vendor.audio.extendtonecallendedlength=true
-ro.vendor.audio.feature.fade=true
-ro.vendor.audio.feature.spatial=5
 ro.vendor.audio.gain.support=true
-ro.vendor.audio.game.mode=true
-ro.vendor.audio.misound.bluetooth.enable=false
-ro.vendor.audio.multichannel.5point1=false
-ro.vendor.audio.multichannel.5point1.headset=true
-ro.vendor.audio.multi.channel=true
-ro.vendor.audio.multiroute=true
-ro.vendor.audio.policy.engine.odm=true
-ro.vendor.audio.screenrecorder.bothrecord=0
-ro.vendor.audio.sdk.fluencetype=none
-ro.vendor.audio.sdk.ssr=false
-ro.vendor.audio.sfx.earadj=true
-ro.vendor.audio.sfx.scenario=true
-ro.vendor.audio.sos=true
-ro.vendor.audio.soundfx.type=mi
-ro.vendor.audio.soundfx.usb=true
-ro.vendor.audio.spk.stereo=true
 ro.vendor.audio.support.sound.id=true
-ro.vendor.audio.videobox.switch=true
-ro.vendor.audio.voice.change.support=true
-ro.vendor.audio.voice.change.version=2
-ro.vendor.audio.voice.change.youme.support=true
 vendor.audio.adm.buffering.ms=2
-vendor.audio.c2.preferred=true
 vendor.audio.compress_capture.aac.cut_off_freq=-1
 vendor.audio.compress_capture.aac=true
-vendor.audio.compress_capture.enabled=true
-vendor.audio.dolby.control.support=false
-vendor.audio.enable.mirrorlink=false
 vendor.audio.feature.a2dp_offload.enable=true
 vendor.audio.feature.afe_proxy.enable=true
-vendor.audio.feature.anc_headset.enable=false
-vendor.audio.feature.audiozoom.enable=false
 vendor.audio.feature.battery_listener.enable=true
-vendor.audio.feature.compr_cap.enable=false
-vendor.audio.feature.compress_in.enable=true
-vendor.audio.feature.compress_meta_data.enable=true
-vendor.audio.feature.compr_voip.enable=false
-vendor.audio.feature.concurrent_capture.enable=true
-vendor.audio.feature.custom_stereo.enable=true
-vendor.audio.feature.deepbuffer_as_primary.enable=false
-vendor.audio.feature.display_port.enable=true
 vendor.audio.feature.dmabuf.cma.memory.enable=false
-vendor.audio.feature.dsm_feedback.enable=false
-vendor.audio.feature.dynamic_ecns.enable=true
-vendor.audio.feature.external_dsp.enable=false
-vendor.audio.feature.external_speaker.enable=false
-vendor.audio.feature.external_speaker_tfa.enable=false
-vendor.audio.feature.ext_hw_plugin.enable=false
-vendor.audio.feature.fluence.enable=true
-vendor.audio.feature.fm.enable=true
-vendor.audio.feature.hdmi_edid.enable=true
-vendor.audio.feature.hdmi_passthrough.enable=true
 vendor.audio.feature.hfp.enable=true
-vendor.audio.feature.hifi_audio.enable=false
-vendor.audio.feature.hwdep_cal.enable=false
-vendor.audio.feature.incall_music.enable=true
-vendor.audio.feature.keep_alive.enable=true
 vendor.audio.feature.kpi_optimize.enable=true
-vendor.audio.feature.maxx_audio.enable=false
-vendor.audio.feature.multi_voice_session.enable=true
-vendor.audio.feature.ras.enable=true
-vendor.audio.feature.record_play_concurency.enable=false
-vendor.audio.feature.snd_mon.enable=true
-vendor.audio.feature.spkr_prot.enable=true
-vendor.audio.feature.src_trkn.enable=true
-vendor.audio.feature.ssrec.enable=true
-vendor.audio.feature.usb_offload_burst_mode.enable=true
-vendor.audio.feature.usb_offload.enable=true
-vendor.audio.feature.usb_offload_sidetone_volume.enable=false
-vendor.audio.feature.vbat.enable=true
-vendor.audio.feature.wsa.enable=false
 vendor.audio.flac.sw.decoder.24bit=true
 vendor.audio.hal.boot.timeout.ms=20000
-vendor.audio_hal.in_period_size=144
-vendor.audio.hal.output.suspend.supported=true
-vendor.audio_hal.period_multiplier=3
-vendor.audio_hal.period_size=192
 vendor.audio.hdr.record.enable=false
-vendor.audio.hw.aac.encoder=false
-vendor.audio.offload.buffer.size.kb=256
-vendor.audio.offload.gapless.enabled=true
-vendor.audio.offload.multiaac.enable=true
-vendor.audio.offload.multiple.enabled=false
-vendor.audio.offload.passthrough=false
+vendor.audio.offload.buffer.size.kb=32
 vendor.audio.offload.playspeed=true
-vendor.audio.offload.track.enable=true
-vendor.audio.parser.ip.buffer.size=262144
 vendor.audio.safx.pbe.enabled=false
-vendor.audio.spkcal.copy.inhal=true
-vendor.audio.tunnel.encode=false
 vendor.audio.ull_record_period_multiplier=2
-vendor.audio.use.sw.alac.decoder=true
-vendor.audio.use.sw.ape.decoder=true
-vendor.audio.use.sw.mpegh.decoder=true
 vendor.audio.volume.headset.gain.depcal=true
+vendor.audio_hal.period_size=192
 vendor.qc2audio.per_frame.flac.dec.enabled=true
 vendor.qc2audio.suspend.enabled=true
-vendor.voice.path.for.pcm.voip=true
 
 # Adaptive Suspend
 suspend.short_suspend_threshold_millis=5000
 
 # Bluetooth
-bluetooth.device.class_of_device=90,2,12
-bluetooth.hfp.codec_aptx_voice.enabled=true
-bluetooth.leaudio.dual_bidirection_swb.supported=true
-bluetooth.profile.pbap.sim.enabled=true
-bluetooth.profile.sap.server.enabled=false
 bluetooth.profile.a2dp.source.enabled=true
 bluetooth.profile.asha.central.enabled=true
 bluetooth.profile.avrcp.controller.enabled=false
@@ -182,17 +66,8 @@ bluetooth.profile.pbap.server.enabled=true
 bluetooth.profile.sap.server.enabled=false
 bluetooth.profile.vcp.controller.enabled=false
 persist.bluetooth.a2dp_offload.disabled=false
-persist.bluetooth.leaudio.allow.multiple.context=false
-persist.bluetooth.leaudio.bypass_allow_list=true
-persist.bluetooth.leaudio.notify.idle.during.call=true
-persist.bluetooth.leaudio_offload.disabled=false
 persist.sys.fflag.override.settings_bluetooth_hearing_aid=true
-persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac-lhdc
-persist.vendor.bt.aac_frm_ctl.enabled=true
-persist.vendor.bt.aac_vbr_frm_ctl.enabled=true
 persist.vendor.qcom.bluetooth.a2dp_mcast_test.enabled=false
-persist.vendor.btstack.enable.twsplus=true
-persist.vendor.btstack.enable.twsplussho=true
 persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac-aptxadaptiver2
 persist.vendor.qcom.bluetooth.aac_frm_ctl.enabled=true
 persist.vendor.qcom.bluetooth.aptxadaptiver2_1_support=true
@@ -206,15 +81,10 @@ ro.camera.enableCamera1MaxZsl=1
 persist.vendor.camera.perflock.enable=0
 
 # Dalvik
-dalvik.vm.dex2oat64.enabled=true
 dalvik.vm.dex2oat-cpu-set=4,5,6,7
 dalvik.vm.dex2oat-threads=4
 dalvik.vm.image-dex2oat-cpu-set=4,5,6,7
 dalvik.vm.image-dex2oat-threads=4
-
-# Dolby Vision
-ro.vendor.audio.dolby.vision.support=false
-debug.config.media.video.dolby_vision_suports=false
 
 # DPM
 persist.vendor.dpm.vndr.feature=1
@@ -228,10 +98,6 @@ vendor.wv.oemcrypto.debug.enable_hlos_data_path=true
 # Fingerprint
 persist.vendor.fingerprint.type=udfps_optical
 persist.vendor.fingerprint.sensor_location=610|2437|105
-persist.vendor.fingerprint.sensor_modules=goodix_fod
-
-# FRP
-ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
 # FUSE
 persist.sys.fuse.passthrough.enable=true
@@ -246,28 +112,21 @@ debug.renderengine.backend=skiavkthreaded
 debug.sf.auto_latch_unsignaled=0
 debug.hwui.skia_tracing_enabled=false
 debug.hwui.skia_use_perfetto_track_events=false
-debug.sf.disable_client_composition_cache=1
-debug.sf.early.app.duration=16600000
-debug.sf.early.sf.duration=16600000
-debug.sf.earlyGl.app.duration=16600000
-debug.sf.earlyGl.sf.duration=16600000
+debug.sf.disable_client_composition_cache=0
 debug.sf.enable_gl_backpressure=0
 debug.sf.enable_transaction_tracing=false
 debug.sf.frame_rate_multiple_threshold=120
 debug.sf.hw=0
-debug.sf.late.app.duration=16600000
-debug.sf.late.sf.duration=10500000
 debug.sf.predict_hwc_composition_strategy=0
 debug.sf.treat_170m_as_sRGB=1
 debug.sf.region_sampling_timer_timeout_ns=200000000
 debug.sf.region_sampling_period_ns=200000000
-debug.sf.use_phase_offsets_as_durations=1
 debug.sf.defer_refresh_rate_when_off=1
+debug.sf.use_phase_offsets_as_durations=0
 graphics.gpu.profiler.support=true
 dev.pm.dyn_samplingrate=1
 persist.sys.sf.color_mode=0
 persist.sys.sf.color_saturation=1.0
-persist.sys.sf.native_mode=256
 ro.gfx.driver.1=com.qualcomm.qti.gpudrivers.pineapple.api34
 ro.egl.blobcache.multifile=true
 ro.egl.blobcache.multifile_limit=33554432
@@ -282,17 +141,17 @@ ro.surface_flinger.has_wide_color_display=true
 ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 ro.surface_flinger.max_virtual_display_dimension=4096
 ro.surface_flinger.protected_contents=true
-ro.surface_flinger.set_idle_timer_ms=3000
-ro.surface_flinger.set_touch_timer_ms=200
+ro.surface_flinger.set_idle_timer_ms?=1000
+ro.surface_flinger.set_touch_timer_ms=1000
 ro.surface_flinger.supports_background_blur=1
 ro.surface_flinger.use_color_management=true
 ro.surface_flinger.use_content_detection_for_refresh_rate=true
 ro.surface_flinger.wcg_composition_dataspace=143261696
-ro.surface_flinger.support_kernel_idle_timer=true
-ro.surface_flinger.uclamp.min=307
 ro.vendor.displayfeature.dump=true
 ro.vendor.display.ai_disp.enable=true
 ro.vendor.hbm_backlight.enable=true
+ro.surface_flinger.support_kernel_idle_timer=true
+ro.surface_flinger.uclamp.min=30
 vendor.display.comp_mask=0
 vendor.display.use_layer_ext=0
 vendor.display.use_smooth_motion=0
@@ -301,15 +160,18 @@ vendor.display.disable_excl_rect=0
 vendor.display.disable_excl_rect_partial_fb=1
 vendor.display.disable_get_screen_decorator_support=1
 vendor.display.disable_hw_recovery_dump=1
+vendor.display.disable_idle_scaling_layers=1
 vendor.display.disable_offline_rotator=1
 vendor.display.disable_scaler=0
 vendor.display.disable_sdr_dimming=0
 vendor.display.disable_sdr_histogram=1
+vendor.display.enable_async_powermode=0
 vendor.display.enable_async_vds_creation=1
 vendor.display.enable_dpps_dynamic_fps=1
 vendor.display.enable_hdr10_gpu_target=0
 vendor.display.enable_optimize_refresh=1
 vendor.display.force_lm_to_fb_config=1
+vendor.display.reserved_writeback_config=1
 vendor.display.scaling_dest_opt_mode=4
 vendor.display.scaling_source_opt_mode=4
 vendor.display.vds_allow_hwc=1
@@ -360,10 +222,16 @@ media.stagefright.enable-qcp=true
 media.stagefright.enable-scan=true
 vendor.mm.enable.qcom_parser=16777215
 
+# Media configs
+ro.media.xml_variant.profiles=_cliffs_v0
+vendor.mm.target.enable.qcom_parser=524304
+vendor.media.target_variant=_cliffs_v0
+vendor.netflix.bsp_rev=Q8635-38577-1
+
 # Power
 ro.vendor.extension_library=libqti-perfd-client.so
+ro.vendor.perf-hal.ver=3.0
 ro.vendor.perf.scroll_opt=1
-vendor.perf.framepacing.enable=1
 
 # QCOM
 ro.soc.manufacturer=QTI
@@ -388,15 +256,17 @@ ro.com.android.dataroaming=true
 ro.vendor.radio.build_profile=miui
 ro.vendor.radio.build_region=global
 
+# Sensors
+ro.vendor.sensors.xiaomi.double_tap=true
+ro.vendor.sensors.xiaomi.single_tap=true
+ro.vendor.sensors.xiaomi.udfps=true
+
 # SKU
 ro.boot.product.vendor.sku=cliffs
 
-# Sensors
-ro.vendor.sensors.xiaomi.udfps=true
-ro.vendor.sensors.xiaomi.single_tap=true
-ro.vendor.sensors.xiaomi.double_tap=true
-
 # USB
+ro.usb.uvc.enabled=true
+ro.usb.uvc.disable_video_encode_flag=true
 ro.recovery.usb.adb.pid=D001
 ro.recovery.usb.fastboot.pid=4EE0
 ro.recovery.usb.vid=18D1
@@ -415,9 +285,6 @@ vendor.usb.use_gadget_hal=1
 persist.vendor.radio.report_codec=1
 persist.vendor.radio.vdp_on_ims_cap=1
 persist.vendor.qti.telephony.vt_cam_interface=1
-
-# Vibrator
-ro.hardware.vibrator.playLengthMs=45
 
 # Volume
 ro.config.alarm_vol_steps=15

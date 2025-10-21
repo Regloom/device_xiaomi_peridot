@@ -1,5 +1,5 @@
 <!--
-     Copyright (C) 2024 The LineageOS Project
+     SPDX-FileCopyrightText: The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
@@ -7,5 +7,5 @@
     <overlay android:targetPackage="com.android.nfc"
                    android:targetName="NfcCustomization"
                    android:isStatic="true"
-                   android:priority="700"/>
+                   android:priority="600"/>
 </manifest>

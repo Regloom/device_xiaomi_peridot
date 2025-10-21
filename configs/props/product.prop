@@ -10,7 +10,6 @@ audio.sys.mute.latency.factor=2
 audio.sys.noisy.broadcast.delay=500
 audio.sys.offload.pstimeout.secs=3
 audio.sys.routing.latency=0
-media.stagefright.audio.deep=false
 ro.af.client_heap_size_kbyte=7168
 vendor.audio.flac.sw.decoder.24bit=true
 vendor.audio.hw.aac.encoder=true
@@ -24,8 +23,11 @@ vendor.audio.use.sw.ape.decoder=true
 vendor.audio_hal.period_size=192
 vendor.voice.path.for.pcm.voip=true
 
-# Disable Skia tracing by default
-debug.hwui.skia_atrace_enabled=false
+# App launch prefetching (IORapd)
+ro.iorapd.enable=false
+iorapd.perfetto.enable=false
+iorapd.readahead.enable=false
+persist.device_config.runtime_native_boot.iorap_readahead_enable=false
 
 # Low Memory Killer Daemon
 ro.lmk.log_stats=false
@@ -51,6 +53,9 @@ ro.lmk.filecache_min_kb=131072
 ro.lmk.stall_limit_critical=4
 ro.config.low_ram=false
 ro.config.per_app_memcg=true
+
+# Media
+media.stagefright.audio.deep=true
 
 # RKPD
 remote_provisioning.enable_rkpd=true
