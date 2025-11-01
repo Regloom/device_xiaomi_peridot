@@ -332,6 +332,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     NcmTetheringOverlay
 
+# OpenEUICC
+PRODUCT_PACKAGES += \
+    OpenEUICC
+
 # Parts
 include packages/apps/XiaomiParts/parts.mk
 TARGET_USE_CLEARSPEAKER := true
