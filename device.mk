@@ -458,7 +458,7 @@ PRODUCT_COPY_FILES += \
 
 # Thermal
 PRODUCT_PACKAGES += \
-    android.hardware.thermal-service.pixel \
+    android.hardware.thermal-service.qti \
     thermal_symlinks
 
 PRODUCT_COPY_FILES += \

@@ -134,6 +134,9 @@ on boot
     start vendor.thermal-engine-v2
     trigger enable-thermal-hal
 
+on property:sys.boot_completed=1
+    restart vendor.thermal-engine-v2
+
 on property:vendor.display.lcd_density=560
    setprop dalvik.vm.heapgrowthlimit 256m
 
@@ -180,6 +183,10 @@ service vendor.thermal-engine-v2 /vendor/bin/thermal-engine-v2 -c /vendor/etc/th
     class main
     user root
     group root
+    socket thermal-send-client stream 0660 system oem_2907
+    socket thermal-recv-client stream 0660 system oem_2907
+    socket thermal-recv-passive-client stream 0660 system oem_2907
+    socket thermal-send-rule stream 0660 system oem_2907
 
 #service vendor.mdm_helper /vendor/bin/mdm_helper
 #    class core
