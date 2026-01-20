@@ -41,10 +41,10 @@
         <!-- Low power mode limitation for HBM -->
         <allowInLowPowerMode>true</allowInLowPowerMode>
     </highBrightnessMode>
-    <screenBrightnessRampFastDecrease>0.41590282</screenBrightnessRampFastDecrease>
-    <screenBrightnessRampFastIncrease>0.41590282</screenBrightnessRampFastIncrease>
+    <screenBrightnessRampFastDecrease>0.25</screenBrightnessRampFastDecrease>
+    <screenBrightnessRampFastIncrease>0.25</screenBrightnessRampFastIncrease>
     <screenBrightnessRampIncreaseMaxMillis>1000</screenBrightnessRampIncreaseMaxMillis>
     <screenBrightnessRampDecreaseMaxMillis>1000</screenBrightnessRampDecreaseMaxMillis>
-    <ambientLightHorizonLong>3000</ambientLightHorizonLong>
-    <ambientLightHorizonShort>1000</ambientLightHorizonShort>
+    <ambientLightHorizonLong>8000</ambientLightHorizonLong>
+    <ambientLightHorizonShort>4000</ambientLightHorizonShort>
 </displayConfiguration>
