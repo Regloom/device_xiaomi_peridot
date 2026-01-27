@@ -14,17 +14,11 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from peridot device
 $(call inherit-product, device/xiaomi/peridot/device.mk)
 
-# Inherit from the MiuiCamera setup
-$(call inherit-product-if-exists, device/xiaomi/peridot-miuicamera/device.mk)
-
-# TARGET_DISABLE_EPPE := true
-
 PRODUCT_NAME := lineage_peridot
 PRODUCT_DEVICE := peridot
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := 24069PC21G
-
 PRODUCT_SYSTEM_NAME := peridot_global
 PRODUCT_SYSTEM_DEVICE := peridot
 

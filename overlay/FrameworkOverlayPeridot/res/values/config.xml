@@ -31,10 +31,10 @@
     <bool name="config_automatic_brightness_available">true</bool>
 
     <!-- Fast brightness animation ramp rate in brightness units per second-->
-    <integer name="config_brightness_ramp_rate_fast" translatable="false">1200</integer>
+    <integer name="config_brightness_ramp_rate_fast" translatable="false">4932</integer>
 
     <!-- Slow brightness animation ramp rate in brightness units per second-->
-    <integer name="config_brightness_ramp_rate_slow" translatable="false">1000</integer>
+    <integer name="config_brightness_ramp_rate_slow" translatable="false">3946</integer>
 
     <!-- Indicate available ColorDisplayManager.COLOR_MODE_xxx. -->
     <integer-array name="config_availableColorModes">
@@ -256,64 +256,65 @@
          array. The brightness values must be non-negative and non-decreasing. This must be
          overridden in platform specific overlays -->
     <array name="config_autoBrightnessDisplayValuesNits">
-        <item>8.0</item>
-        <item>10.0</item>
-        <item>12.0</item>
-        <item>20.0</item>
-        <item>30.0</item>
-        <item>38.0</item>
-        <item>42.0</item>
-        <item>52.0</item>
-        <item>65.0</item>
-        <item>82.0</item>
-        <item>90.0</item>
+        <item>3.1</item>
+        <item>3.5</item>
+        <item>3.8</item>
+        <item>16.4</item>
+        <item>26.0</item>
+        <item>34.0</item>
+        <item>37.0</item>
+        <item>49.0</item>
+        <item>62.0</item>
+        <item>79.0</item>
+        <item>86.0</item>
+        <item>88.0</item>
+        <item>88.0</item>
+        <item>88.0</item>
+        <item>89.0</item>
+        <item>89.0</item>
+        <item>89.0</item>
+        <item>91.0</item>
+        <item>91.0</item>
+        <item>93.0</item>
+        <item>93.0</item>
+        <item>93.0</item>
+        <item>93.0</item>
+        <item>94.0</item>
+        <item>94.0</item>
         <item>95.0</item>
-        <item>98.0</item>
+        <item>99.0</item>
         <item>100.0</item>
-        <item>102.0</item>
-        <item>104.0</item>
-        <item>106.0</item>
+        <item>101.0</item>
+        <item>103.0</item>
+        <item>105.0</item>
         <item>108.0</item>
-        <item>110.0</item>
-        <item>112.0</item>
-        <item>114.0</item>
-        <item>116.0</item>
-        <item>118.0</item>
+        <item>109.0</item>
+        <item>111.0</item>
+        <item>113.0</item>
+        <item>113.0</item>
+        <item>117.0</item>
+        <item>119.0</item>
         <item>120.0</item>
-        <item>122.0</item>
+        <item>123.0</item>
         <item>124.0</item>
         <item>126.0</item>
-        <item>128.0</item>
+        <item>127.0</item>
         <item>130.0</item>
         <item>132.0</item>
-        <item>134.0</item>
-        <item>136.0</item>
-        <item>138.0</item>
-        <item>140.0</item>
-        <item>142.0</item>
-        <item>144.0</item>
-        <item>146.0</item>
-        <item>148.0</item>
-        <item>150.0</item>
-        <item>152.0</item>
         <item>154.0</item>
-        <item>156.0</item>
-        <item>158.0</item>
-        <item>160.0</item>
-        <item>165.0</item>
-        <item>180.0</item>
-        <item>200.0</item>
-        <item>230.0</item>
-        <item>260.0</item>
-        <item>300.0</item>
-        <item>330.0</item>
-        <item>350.0</item>
-        <item>420.0</item>
-        <item>450.0</item>
-        <item>465.0</item>
-        <item>475.0</item>
-        <item>490.0</item>
-        <item>510.0</item>
+        <item>172.0</item>
+        <item>192.0</item>
+        <item>220.0</item>
+        <item>251.0</item>
+        <item>292.0</item>
+        <item>320.0</item>
+        <item>337.0</item>
+        <item>411.0</item>
+        <item>439.0</item>
+        <item>453.0</item>
+        <item>466.0</item>
+        <item>480.0</item>
+        <item>500.0</item>
         <item>508.3</item>
         <item>516.6</item>
         <item>525.0</item>
@@ -431,14 +432,14 @@
          the screen brightness is recalculated. See the config_ambientThresholdLevels
          description for how the constraint value is chosen. -->
     <integer-array name="config_ambientBrighteningThresholds">
+        <item>2</item>
+        <item>6</item>
         <item>10</item>
-        <item>15</item>
-        <item>20</item>
-        <item>50</item>
-        <item>150</item>
-        <item>500</item>
-        <item>700</item>
-        <item>1200</item>
+        <item>30</item>
+        <item>100</item>
+        <item>400</item>
+        <item>600</item>
+        <item>1000</item>
     </integer-array>
 
     <!-- Array of hysteresis constraint values for darkening, represented as tenths of a
@@ -448,14 +449,14 @@
          the screen brightness is recalculated. See the config_ambientThresholdLevels
          description for how the constraint value is chosen. -->
     <integer-array name="config_ambientDarkeningThresholds">
-        <item>600</item>
-        <item>600</item>
-        <item>400</item>
-        <item>400</item>
-        <item>400</item>
-        <item>400</item>
-        <item>400</item>
-        <item>400</item>
+        <item>800</item>
+        <item>800</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
     </integer-array>
 
     <!-- Array of screen brightness threshold values. This is used for determining hysteresis
@@ -484,7 +485,7 @@
          than this threshold, it is applied. See the config_screenThresholdLevels description for
          how the constraint value is chosen. -->
     <integer-array name="config_screenBrighteningThresholds">
-        <item>50</item>
+        <item>0</item>
     </integer-array>
 
     <!-- Array of hysteresis constraint values for darkening, represented as tenths of a
@@ -494,7 +495,7 @@
          this threshold, it is applied. See the config_screenThresholdLevels description for how
          the constraint value is chosen. -->
     <integer-array name="config_screenDarkeningThresholds">
-        <item>50</item>
+        <item>0</item>
     </integer-array>
 
     <!-- Note: This config is deprecated, use BluetoothProperties instead.
