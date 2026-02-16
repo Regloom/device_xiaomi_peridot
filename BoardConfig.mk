@@ -66,9 +66,6 @@ endif
 TARGET_BOOTLOADER_BOARD_NAME := peridot
 TARGET_NO_BOOTLOADER := true
 
-# Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/configs/bluetooth/include
-
 # Display
 TARGET_SCREEN_DENSITY := 480
 
