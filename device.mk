@@ -374,7 +374,7 @@ PRODUCT_PACKAGES += \
 include packages/apps/XiaomiParts/parts.mk
 TARGET_USE_CLEARSPEAKER := true
 TARGET_USE_SATURATIONSLIDER := true
-TARGET_USE_KPROFILES := true
+TARGET_USE_THERMALPROFILES := true
 TARGET_SUPPORTS_HTSR := true
 
 # Partitions
