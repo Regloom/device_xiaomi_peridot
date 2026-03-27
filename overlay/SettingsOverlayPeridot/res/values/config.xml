@@ -44,4 +44,7 @@
     -->
     <integer name="config_vibration_supported_intensity_levels">3</integer>
 
+    <!-- Enable cross-SIM calling when auto data switch is active -->
+    <bool name="config_auto_data_switch_enables_cross_sim_calling">true</bool>
+    
 </resources>
