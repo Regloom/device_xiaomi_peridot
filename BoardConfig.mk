@@ -180,6 +180,8 @@ TARGET_KERNEL_EXT_MODULES := \
     qcom/opensource/touch-drivers \
     nxp/opensource/driver
 
+include kernel/xiaomi/sm8635-modules/xiaomi/xiaomi_board.mk
+
 # MiuiCamera
 CAMERA_PACKAGE_NAME := com.android.camera
 
