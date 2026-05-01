@@ -160,6 +160,10 @@ PRODUCT_COPY_FILES += \
 # Characteristics
 PRODUCT_CHARACTERISTICS := nosdcard
 
+# Charging
+PRODUCT_PACKAGES += \
+    charging
+
 # DeviceAsWebcam
 PRODUCT_PACKAGES += \
     DeviceAsWebcam
