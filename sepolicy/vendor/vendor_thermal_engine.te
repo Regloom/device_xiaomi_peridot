@@ -6,12 +6,14 @@ r_dir_file(vendor_thermal_engine, thermal_data_file)
 
 # Allow ThermalEngine to create its client socket under /dev/socket (socket_device)
 allow vendor_thermal_engine socket_device:dir { add_name remove_name write search };
-allow vendor_thermal_engine socket_device:sock_file { create write setattr unlink };
-allow vendor_thermal_engine self:capability { chown fowner sys_admin };
+allow vendor_thermal_engine vendor_thermal_socket:sock_file { create write setattr unlink };
 
 # Allow thermal engine to write to its files
 allow vendor_thermal_engine thermal_data_file:dir rw_dir_perms;
 allow vendor_thermal_engine thermal_data_file:file create_file_perms;
+
+# Suppress thermal-send-client socket creation errors
+dontaudit vendor_thermal_engine vendor_thermal_socket:sock_file { create };
 
 # Allow ThermalEngine to operate its Unix stream socket
 allow vendor_thermal_engine self:unix_stream_socket { create connect listen accept bind getopt setopt read write };
@@ -22,16 +24,3 @@ allow vendor_thermal_engine self:unix_stream_socket { create connect bind };
 
 # Grant necessary capabilities: change file ownership and perform sysadmin tasks
 allow vendor_thermal_engine self:capability { chown fowner sys_admin };
-
-# Allow reading thermal data files
-allow vendor_thermal_engine thermal_data_file:dir r_dir_perms;
-
-# Allow read/write to devfreq nodes
-allow vendor_thermal_engine vendor_sysfs_devfreq:dir r_dir_perms;
-allow vendor_thermal_engine vendor_sysfs_devfreq:file rw_file_perms;
-
-# Rule for vendor_thermal_engine to access init process
-unix_socket_connect(vendor_thermal_engine, property, init);
-
-# Allow setting thermal properties
-set_prop(vendor_thermal_engine, vendor_thermal_prop)
