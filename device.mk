@@ -403,6 +403,7 @@ include packages/apps/XiaomiParts/parts.mk
 TARGET_USE_CLEARSPEAKER := true
 TARGET_USE_SATURATIONSLIDER := true
 TARGET_USE_KPROFILES := true
+TARGET_USE_DISPLAYFEATURES := true
 TARGET_SUPPORTS_NOTGAMETURBO := true
 
 # Partitions
