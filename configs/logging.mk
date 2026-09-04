@@ -1,5 +1,8 @@
 # Logging
 SPAMMY_LOG_TAGS := \
+    Atwfd_Daemon \
+    COMU \
+    DisplayDeviceRepository \
     Diag_Lib \
     KernelSU \
     artd \
@@ -14,6 +17,7 @@ SPAMMY_LOG_TAGS := \
     libsensor-qshcalapi \
     sensors \
     sensors-hal \
+    sscrpcd \
     vendor.qti.hardware.display.composer-service \
     vendor.xiaomi.sensor.citsensorservice-service.aidl \
     vendor.xiaomi.sensor.citsensorservice.aidl \
@@ -53,7 +57,12 @@ SPAMMY_LOG_TAGS := \
     ActivityManager \
     qcrilNrd \
     vendor.lineage.health-service.default \
-    thermal-engine
+    thermal-engine \
+    PAL \
+    surfaceflinger \
+    AdrenoVK-0 \
+    qspmHal \
+    resolv
 
 ifneq ($(TARGET_BUILD_VARIANT),eng)
 PRODUCT_VENDOR_PROPERTIES += \
