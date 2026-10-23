@@ -193,8 +193,6 @@ TARGET_KERNEL_EXT_MODULES := \
     xiaomi/drivers/thermal/xiaomi \
     xiaomi/drivers/xiaomi/dump_display
 
-include kernel/xiaomi/sm8635-modules/xiaomi/xiaomi_board.mk
-
 # MiuiCamera
 CAMERA_PACKAGE_NAME := com.android.camera
 
