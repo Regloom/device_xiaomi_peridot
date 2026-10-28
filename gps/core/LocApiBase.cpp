@@ -74,7 +74,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include <log_util.h>
 #include <LocContext.h>
 #include <loc_misc_utils.h>
-#include <ContextBase.h>
 
 namespace loc_core {
 
@@ -521,24 +520,8 @@ void LocApiBase::reportNmea(const char* nmea, int length)
 void LocApiBase::reportXtraServer(const char* url1, const char* url2,
                                   const char* url3, const int maxlength)
 {
-    // Override the modem-provided XTRA server list with the entries
-    // configured in /vendor/etc/gps.conf (XTRA_SERVER_1/2/3), so that
-    // xtra-daemon downloads through the privacy proxy designated on the AP
-    // side instead of the modem's default xtracloud servers.
-    const char* u1 = url1;
-    const char* u2 = url2;
-    const char* u3 = url3;
-    if ('\0' != ContextBase::mGps_conf.XTRA_SERVER_1[0]) {
-        u1 = ContextBase::mGps_conf.XTRA_SERVER_1;
-    }
-    if ('\0' != ContextBase::mGps_conf.XTRA_SERVER_2[0]) {
-        u2 = ContextBase::mGps_conf.XTRA_SERVER_2;
-    }
-    if ('\0' != ContextBase::mGps_conf.XTRA_SERVER_3[0]) {
-        u3 = ContextBase::mGps_conf.XTRA_SERVER_3;
-    }
     // loop through adapters, and deliver to the first handling adapter.
-    TO_1ST_HANDLING_LOCADAPTERS(mLocAdapters[i]->reportXtraServer(u1, u2, u3, maxlength));
+    TO_1ST_HANDLING_LOCADAPTERS(mLocAdapters[i]->reportXtraServer(url1, url2, url3, maxlength));
 
 }
 
