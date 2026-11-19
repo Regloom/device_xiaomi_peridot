@@ -3167,10 +3167,6 @@
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
         <int name="carrier_default_wfc_ims_mode_int" value="2" />
     </carrier_config>
-    <carrier_config mcc="283" mnc="5">
-        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
-        <int name="carrier_default_wfc_ims_mode_int" value="2" />
-    </carrier_config>
     <carrier_config mcc="284" mnc="3">
         <boolean name="mtk_wos_flight_mode_support_bool" value="true" />
     </carrier_config>
@@ -12757,7 +12753,8 @@
     <carrier_config mcc="274" mnc="2">
         <boolean name="carrier_volte_available_bool" value="true" />
     </carrier_config>
-    <carrier_config mcc="283" mnc="5">
+    <!-- Viva Armenia -->
+    <carrier_config mcc="283" mnc="05">
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
