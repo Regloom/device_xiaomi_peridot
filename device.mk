@@ -73,6 +73,11 @@ PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.3-impl 
 #    android.hardware.audio.sounddose-vendor-impl
 
+# DSP hotword trigger ("OK Google" on the ADSP for the default assistant app),
+# from packages/apps/DspHotwordTrigger (github.com/Regloom/dsphotword)
+PRODUCT_PACKAGES += \
+    DspHotwordTrigger
+
 PRODUCT_PACKAGES += \
     audioadsprpcd \
     audio.r_submix.default \
