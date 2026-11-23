@@ -336,6 +336,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.memtrack-service
 
+# microG (vendor/partner_gms from lineageos4microg, APKs fetched by its vendorsetup.sh)
+ifneq ($(wildcard vendor/partner_gms/GmsCore/Android.mk),)
+PRODUCT_PACKAGES += \
+    FakeStore \
+    GmsCore
+endif
+
 # Network
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.ipsec_tunnels.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.ipsec_tunnels.xml \
